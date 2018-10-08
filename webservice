@@ -6,7 +6,7 @@ $(document).ready(function() {
     $.ajax({
     	type: 'POST',
     	contentType: 'application/json',
-        url: 'http://localhost:8080/spring-cxf-rest/services/userServices/product?id=123',
+        url: 'http://localhost:8080/restservice/services/userServices/user?id=123',
         //data: {"id":123}
         
     }).then(function(data) {
