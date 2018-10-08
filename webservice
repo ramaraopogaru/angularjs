@@ -1,1 +1,17 @@
 public User saveProduct(@QueryParam(value = "id") String id);
+<script type="text/javascript">
+document.write('In script');
+//var values = {id:123,ename:ramarao,cname:infosys}
+$(document).ready(function() {
+    $.ajax({
+    	type: 'POST',
+    	contentType: 'application/json',
+        url: 'http://localhost:8080/spring-cxf-rest/services/userServices/product?id=123',
+        //data: {"id":123}
+        
+    }).then(function(data) {
+       //document.write(data.id);
+       //document.write(data.name);
+    });
+});
+</script>
